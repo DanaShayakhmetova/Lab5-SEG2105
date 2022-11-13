@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LayoutName"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/teamFlag"
+        android:layout_width="155dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription=""
+        android:minWidth="100dp"
+        android:minHeight="100dp"
+        android:onClick="changeProfilePic"
+        android:src="@drawable/flag_ca"
+        android:translationY="40dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teamFlag"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="14dp"
+        android:text="Sport Team Manager"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/teamName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="83dp"
+        android:hint=""
+        android:minWidth="200dp"
+        android:singleLine="true"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/teamNameTitle1"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teamName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="143dp"
+        android:text="       Team Name" />
+
+    <EditText
+        android:id="@+id/teamAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teamNameTitle1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:hint=""
+        android:minWidth="200dp"
+        android:singleLine="true"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/teamAddressTitle"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teamAddress"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="143dp"
+        android:text="      Team Address" />
+
+    <Button
+        android:id="@+id/buttonForMap"
+        android:layout_width="157dp"
+        android:layout_height="64dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="127dp"
+        android:layout_marginBottom="130dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:onClick="goToGoogleMaps"
+        android:text="Open in Google Maps"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+</RelativeLayout>
